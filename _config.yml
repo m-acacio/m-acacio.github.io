@@ -90,7 +90,7 @@ publication_category:
     title: 'Books'
   manuscripts:
     title: 'Journal Articles'
-    note: '*authors contributed equally to this study'
+    note: '*authors contributed equally'
   conferences:
     title: 'Conference Papers'
 
