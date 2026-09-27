@@ -2,7 +2,7 @@
 title: "Extreme temperatures impede the release success of captive-bred avian scavengers"
 collection: publications
 category: manuscripts
-permalink: ''
+permalink: '/publication/anglister2026extreme'
 excerpt: ''
 date: 2026-03-15
 venue: 'Ornithological Applications'
