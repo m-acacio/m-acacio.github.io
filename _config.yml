@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Marta Acácio"
 title_separator          : "-"
 name                     : &name "Marta Acácio"
@@ -24,16 +24,16 @@ repository               : "m-acacio/m-acacio.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
+  name             : "Marta Acácio"
+  pronouns         : "she/her" # example: "she/her"  
+  bio              : # add short bio at some point
+  location         : "Portugal"
+  employer         : "BIOPOLIS-CIBIO, University of Porto"
+  uri              : "https://www.cibio.up.pt/en/people/details/marta-acacio/"
   email            : "marta.acacio@gmail.com" 
 
   # Academic websites
-  academia         : # URL
+  academia         : "www.whitestork.org"
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=ZeFljoQAAAAJ&hl=en"
   inspire-hep      : # URL
@@ -41,7 +41,7 @@ author:
   orcid            : "https://orcid.org/0000-0002-9947-1181"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Marta-Acacio-2"
   scopus           : # URL
   zotero           : # URL
