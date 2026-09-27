@@ -13,8 +13,12 @@ author_profile: true
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+       {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2>
+        {% if category[1].note %}
+          <p><em>{{ category[1].note }}</em></p>
+        {% endif %}
+        <hr />
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
