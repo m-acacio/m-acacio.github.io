@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Marta Acácio"
 title_separator          : "-"
 name                     : &name "Marta Acácio"
@@ -29,7 +29,7 @@ author:
   bio              : # add short bio at some point
   location         : "Portugal"
   employer         : "BIOPOLIS-CIBIO, University of Porto"
-  uri              : "www.whitestork.org"
+  uri              : "https://whitestork.org/"
   email            : "marta.acacio@gmail.com" 
 
   # Academic websites
