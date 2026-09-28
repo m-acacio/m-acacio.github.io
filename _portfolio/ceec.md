@@ -8,6 +8,6 @@ collection: portfolio
 permalink: /research/ceec/
 ---
 
-Anthropogenic activities are drastically disrupting bird migration patterns worldwide, and some species are even losing their migratory behaviour. This project aims to shed light on the mechanisms through which ecological and evolutionary processes can be swiftly altered within the lifetime of individuals and evaluate the timescales over which populations can adapt to environmental change.
+(/images/stork_MAcacio.JPG)
 
-Write the full project description here. You can use **bold**, links and lists, and add more photos with ![description](/images/another-photo.jpg).
+Anthropogenic activities are drastically disrupting bird migration patterns worldwide, and some species are even losing their migratory behaviour. This project aims to shed light on the mechanisms through which ecological and evolutionary processes can be swiftly altered within the lifetime of individuals and evaluate the timescales over which populations can adapt to environmental change.
