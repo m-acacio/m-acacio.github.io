@@ -1,6 +1,6 @@
 ---
 title: "Mechanisms underlying the rapid loss of migratory behaviour under anthropogenic environmental change: a multidisciplinary approach (2025-2031)"
-excerpt: "Principal Investigator. Contract funded by FCT (CEEC 6th Edition)"
+excerpt: "Role: Principal Investigator. Contract funded by FCT (CEEC 6th Edition)"
 header:
   teaser: "stork_MAcacio.JPG"
 order: 1
