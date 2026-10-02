@@ -16,6 +16,20 @@ author_profile: true
 .research-card p { margin: 0 0.8em 0.9em; font-size: 0.85em; }
 </style>
 
+<h2 class="page__title" style="margin-bottom: 0.2em;">On-going research</h2>
+<hr style="margin-top: 0.3em;" />
+
+{% assign projects = site.portfolio | sort: "order" %}
+<div class="research-grid">
+{% for project in projects %}
+<a class="research-card" href="{{ base_path }}{{ project.url }}">
+<img src="{{ project.header.teaser | prepend: '/images/' | prepend: base_path }}" alt="{{ project.title }}">
+<h3>{{ project.title }}</h3>
+<p>{{ project.excerpt | strip_html }}</p>
+</a>
+{% endfor %}
+</div>
+
 <h2 class="page__title" style="margin-bottom: 0.2em;">Past projects</h2>
 <hr style="margin-top: 0.3em;" />
 
