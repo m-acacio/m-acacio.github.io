@@ -13,7 +13,10 @@ main:
     
   - title: "Research"
     url: /research/
-        
+    
+  - title: "Outreach"
+    url: /outreach/
+  
   - title: "Talks"
     url: /talks/    
 
