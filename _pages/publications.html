@@ -23,7 +23,7 @@ author_profile: true
 <div class="pub-buttons">
   {% if preprints.size > 0 %}<a href="#preprints">Preprints</a>{% endif %}
   {% if articles.size > 0 %}<a href="#articles">Peer-reviewed articles</a>{% endif %}
-  {% if datasets.size > 0 %}<a href="#datasets">Datasets</a>{% endif %}
+  {% if datasets.size > 0 %}<a href="#datasets">Datasets and code</a>{% endif %}
 </div>
 
 {% if preprints.size > 0 %}
@@ -44,7 +44,7 @@ author_profile: true
 {% endif %}
 
 {% if datasets.size > 0 %}
-<h2 class="page__title pub-section" id="datasets" style="margin-bottom: 0.2em; margin-top: 2em;">Datasets</h2>
+<h2 class="page__title pub-section" id="datasets" style="margin-bottom: 0.2em; margin-top: 2em;">Datasets and code</h2>
 <hr style="margin-top: 0.3em;" />
 {% for post in datasets %}
 <p class="pub-entry">{{ post.citation }}{% if post.paperurl %} <a href="{{ post.paperurl }}" title="View dataset"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Link to dataset</span></a>{% endif %}</p>
