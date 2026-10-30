@@ -6,6 +6,6 @@ permalink: /publication/acacio2025accdata
 excerpt: ''
 date: 2025-01-01
 venue: 'Zenodo'
-paperurl: ''
+paperurl: 'https://zenodo.org/records/17543458'
 citation: '<strong>Acácio, M.</strong>, Vaadia, G., … & Spiegel, O. (2025). Data for: "Using accelerometer-based behavioral classification to enhance scavenger conservation". <i>Zenodo</i>.'
 ---
