@@ -33,20 +33,25 @@ author_profile: true
   <li><strong>Research Internship</strong>, University of Lisbon, Portugal (2009)</li>
 </ul>
 
-<h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Teaching</h2>
+<h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Publications</h2>
 <hr style="margin-top: 0.3em;" />
-<ul class="cv-list">
-  <li><strong>[Course name]</strong>, [Institution] (Year) · [Your role, e.g. guest lecturer]</li>
-</ul>
+
+{% assign n_articles = site.publications | where: "category", "manuscripts" | size %}
+{% assign n_preprints = site.publications | where: "category", "preprints" | size %}
+{% assign n_datasets = site.publications | where: "category", "datasets" | size %}
+
+<p>To date, I have published {{ n_articles }} peer-reviewed article{% if n_articles != 1 %}s{% endif %}{% if n_datasets > 0 %},{% else %} and{% endif %}
+{{ n_preprints }} preprint{% if n_preprints != 1 %}s{% endif %}{% if n_datasets > 0 %} and {{ n_datasets }} dataset{% if n_datasets != 1 %}s{% endif %}{% endif %}.
+The full list is on the <a href="{{ base_path }}/publications/">Publications</a> page.</p>
 
 <h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Student supervision</h2>
 <hr style="margin-top: 0.3em;" />
 <ul class="cv-list">
-  <li><strong>[Student name]</strong>, [MSc / BSc / PhD], "[Thesis title]" (Year) · [Co-supervisor / Supervisor]</li>
+  <li>I currently co-supervise two PhD students, one MRes student, and two MSc students, and have previously supervised or mentored 12 MSc and BSc students across multiple institutions</li>
 </ul>
 
-<h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Conferences</h2>
+<h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Science communication</h2>
 <hr style="margin-top: 0.3em;" />
 <ul class="cv-list">
-  <li><strong>[Presentation title]</strong>, [Conference name], [City, Country] (Year) · [Oral presentation / Poster]</li>
+  <li>My work has been presented in over 40 conference presentations and featured in international news outlets, podcasts, nature documentaries, and at science communication events (see <a href="{{ base_path }}/outreach/">Outreach</a></li>
 </ul>
