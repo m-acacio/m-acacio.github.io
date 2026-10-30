@@ -40,9 +40,9 @@ author_profile: true
 {% assign n_preprints = site.publications | where: "category", "preprints" | size %}
 {% assign n_datasets = site.publications | where: "category", "datasets" | size %}
 
-<p>To date, I have published {{ n_articles }} peer-reviewed article{% if n_articles != 1 %}s{% endif %}{% if n_datasets > 0 %},{% else %} and{% endif %}
+<li>To date, I have published {{ n_articles }} peer-reviewed article{% if n_articles != 1 %}s{% endif %}{% if n_datasets > 0 %},{% else %} and{% endif %}
 {{ n_preprints }} preprint{% if n_preprints != 1 %}s{% endif %}{% if n_datasets > 0 %} and {{ n_datasets }} dataset{% if n_datasets != 1 %}s{% endif %}{% endif %}.
-The full list is on the <a href="{{ base_path }}/publications/">Publications</a> page.</p>
+The full list is on the <a href="{{ base_path }}/publications/">Publications</a> page.</li>
 
 <h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Student supervision</h2>
 <hr style="margin-top: 0.3em;" />
@@ -53,5 +53,5 @@ The full list is on the <a href="{{ base_path }}/publications/">Publications</a>
 <h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Science communication</h2>
 <hr style="margin-top: 0.3em;" />
 <ul class="cv-list">
-  <li>My work has been presented in over 40 conference presentations and featured in international news outlets, podcasts, nature documentaries, and at science communication events (see <a href="{{ base_path }}/outreach/">Outreach</a></li>
+  <li>My work has been presented in over 40 conference presentations and featured in international news outlets, podcasts, nature documentaries, and at science communication events (see <a href="{{ base_path }}/outreach/">Outreach</a>)</li>
 </ul>
