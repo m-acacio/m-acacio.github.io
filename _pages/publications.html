@@ -5,33 +5,50 @@ permalink: /publications/
 author_profile: true
 ---
 
-<div class="pub-list">
-  
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-       {% unless title_shown %}
-          <h2 style="margin-bottom: 0.2em;">{{ category[1].title }}</h2>
-        {% if category[1].note %}
-          <p style="font-size: 0.85em; margin-top: 0; margin-bottom: 0.5em;"><em>{{ category[1].note }}</em></p>
-        {% endif %}
-        <hr style="margin-top: 0.3em;" />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% include base_path %}
+
+<style>
+.pub-buttons { display: flex; gap: 0.8em; flex-wrap: wrap; margin: 0.5em 0 2em; }
+.pub-buttons a { padding: 0.6em 1.2em; background: #ffffff; color: #3a3a3a !important; text-decoration: none !important; border: 2px solid #3a3a3a; border-radius: 4px; font-size: 0.95em; transition: background 0.2s; }
+.pub-buttons a:hover { background: #e0e0e0; }
+.pub-section { scroll-margin-top: 80px; }
+.pub-entry { margin: 0 0 0.9em 0; }
+.pub-note { font-size: 0.85em; margin: 0 0 0.5em 0; }
+</style>
+
+{% assign preprints = site.publications | where: "category", "preprints" | sort: "date" | reverse %}
+{% assign articles = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
+{% assign datasets = site.publications | where: "category", "datasets" | sort: "date" | reverse %}
+
+<div class="pub-buttons">
+  {% if preprints.size > 0 %}<a href="#preprints">Preprints</a>{% endif %}
+  {% if articles.size > 0 %}<a href="#articles">Peer-reviewed articles</a>{% endif %}
+  {% if datasets.size > 0 %}<a href="#datasets">Datasets</a>{% endif %}
+</div>
+
+{% if preprints.size > 0 %}
+<h2 class="page__title pub-section" id="preprints" style="margin-bottom: 0.2em;">Preprints</h2>
+<hr style="margin-top: 0.3em;" />
+{% for post in preprints %}
+<p class="pub-entry">{{ post.citation }}{% if post.paperurl %} <a href="{{ post.paperurl }}" title="View publication"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Link to publication</span></a>{% endif %}</p>
+{% endfor %}
 {% endif %}
 
-  </div>
+{% if articles.size > 0 %}
+<h2 class="page__title pub-section" id="articles" style="margin-bottom: 0.2em; margin-top: 2em;">Peer-reviewed articles</h2>
+<p class="pub-note"><em>*authors contributed equally</em></p>
+<hr style="margin-top: 0.3em;" />
+{% for post in articles %}
+<p class="pub-entry">{{ post.citation }}{% if post.paperurl %} <a href="{{ post.paperurl }}" title="View publication"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Link to publication</span></a>{% endif %}</p>
+{% endfor %}
+{% endif %}
+
+{% if datasets.size > 0 %}
+<h2 class="page__title pub-section" id="datasets" style="margin-bottom: 0.2em; margin-top: 2em;">Datasets</h2>
+<hr style="margin-top: 0.3em;" />
+{% for post in datasets %}
+<p class="pub-entry">{{ post.citation }}{% if post.paperurl %} <a href="{{ post.paperurl }}" title="View dataset"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Link to dataset</span></a>{% endif %}</p>
+{% endfor %}
+{% endif %}
 
 
