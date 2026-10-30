@@ -86,13 +86,11 @@ author:
 publication_category:
   preprints:
     title: 'Preprints'
-  books:
-    title: 'Books'
   manuscripts:
     title: 'Journal Articles'
     note: '*authors contributed equally'
-  conferences:
-    title: 'Conference Papers'
+  datasets:
+    title: 'Datasets'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
