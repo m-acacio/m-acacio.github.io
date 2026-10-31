@@ -35,7 +35,7 @@ author_profile: true
 
 <h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Publications</h2>
 <hr style="margin-top: 0.3em;" />
-
+<ul class="cv-list">
 {% assign n_articles = site.publications | where: "category", "manuscripts" | size %}
 {% assign n_preprints = site.publications | where: "category", "preprints" | size %}
 {% assign n_datasets = site.publications | where: "category", "datasets" | size %}
