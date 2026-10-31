@@ -43,6 +43,7 @@ author_profile: true
 <li>To date, I have published {{ n_articles }} peer-reviewed article{% if n_articles != 1 %}s{% endif %}{% if n_datasets > 0 %},{% else %} and{% endif %}
 {{ n_preprints }} preprint{% if n_preprints != 1 %}s{% endif %}{% if n_datasets > 0 %} and {{ n_datasets }} dataset{% if n_datasets != 1 %}s{% endif %}{% endif %}.
 The full list is on the <a href="{{ base_path }}/publications/">Publications</a> page.</li>
+</ul>
 
 <h2 class="page__title" style="margin-bottom: 0.2em; margin-top: 2em;">Student supervision</h2>
 <hr style="margin-top: 0.3em;" />
