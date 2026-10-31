@@ -41,7 +41,7 @@ author_profile: true
 {% assign n_datasets = site.publications | where: "category", "datasets" | size %}
 
 <li>To date, I have published {{ n_articles }} peer-reviewed article{% if n_articles != 1 %}s{% endif %}{% if n_datasets > 0 %},{% else %} and{% endif %}
-{{ n_preprints }} preprint{% if n_preprints != 1 %}s{% endif %}{% if n_datasets > 0 %} and {{ n_datasets }} dataset{% if n_datasets != 1 %}s{% endif %}{% endif %}.
+{{ n_preprints }} preprint{% if n_preprints != 1 %}s{% endif %}{% if n_datasets > 0 %} and {{ n_datasets }} dataset{% if n_datasets != 1 %}s{% endif %} and code {% endif %}.
 The full list is on the <a href="{{ base_path }}/publications/">Publications</a> page.</li>
 </ul>
 
